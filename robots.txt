@@ -1,0 +1,6 @@
+User-Agent:*
+Disallow: / # すべてのページでクロール禁止
+# Disallow: # すべてページでクロール許可
+Disallow: /googleec51e465d8c50a02.html
+
+Sitemap: https://yamatoworks.net/sitemap.xml

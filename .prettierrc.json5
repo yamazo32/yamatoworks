@@ -1,0 +1,7 @@
+{
+  // 1行コメントOK。折り返し幅を120文字に設定
+  "printWidth": 200,
+
+  // HTML内の空白や改行の扱いを緩くする設定
+  "htmlWhitespaceSensitivity": "ignore"
+}
