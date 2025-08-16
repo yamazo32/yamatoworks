@@ -25,9 +25,6 @@ pnpm-debug.log*
 # 依存パッケージ
 node_modules/
 
-# gh-pages用データ(中身はdist/)
-gh-pages/
-
 # ビルド成果物（ビルド先 dist）
 dist/
 
