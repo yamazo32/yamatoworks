@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+---
+
+<Layout title="ビジネス名刺サンプル｜ヤマトワークス" description="" keywords="">
+  <div class="stage odd">
+    <div class="wrapper bizcard-sample">
+      <h2 class="title">ビジネス名刺</h2>
+      <p class="contact-link">
+        これはサンプルです。<br />ご希望にそったデザインも行います。<br />詳しくは、<a href={`${import.meta.env.BASE_URL}contact/`}>お問合せフォーム</a>より<span class="hidden-xs">
+          お問合せください。
+        </span>
+      </p>
+      <div class="sample-yoko">
+        <h3 class="brackets-title">横サンプル</h3>
+        <table>
+          <tr>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-yoko/001_off.png`} alt="" /></td>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-yoko/002_off.png`} alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-yoko/003_off.png`} alt="" /></td>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-yoko/004_off.png`} alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-yoko/005_off.png`} alt="" /></td>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-yoko/006_off.png`} alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-yoko/007_off.png`} alt="" /></td>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-yoko/008_off.png`} alt="" /></td>
+          </tr>
+        </table>
+      </div><!-- sample-yoko -->
+      <hr />
+      <div class="sample-tate">
+        <h3 class="brackets-title">縦サンプル</h3>
+        <table>
+          <tr>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-tate/001_off.png`} alt="" /></td>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-tate/007_off.png`} alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-tate/003_off.png`} alt="" /></td>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-tate/004_off.png`} alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-tate/005_off.png`} alt="" /></td>
+            <td><img src={`${import.meta.env.BASE_URL}img/biz-tate/006_off.png`} alt="" /></td>
+          </tr>
+        </table>
+      </div><!-- sample-tate -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+</Layout>

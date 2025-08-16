@@ -1,16 +1,36 @@
 ---
-
+import Layout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+	title="デザイン・WEB制作｜ヤマトワークス"
+	description="ホームページ作成には、SEO対策（検索エンジン最適化）に対応した「HTML5+CSS3」で！また、ホームページ作成後のレンタルサーバー貸出からサイト運営管理までサポート"
+	keywords="ホームページ作成,デザイン,SEO対策,WEB制作,ヤマトワークス,WEB制作,名刺,和風,デザイン,印刷"
+	robots="index"
+	bodyClass="toppage"
+	showFooter={false}
+>
+	<div class="middle">
+		<div class="wrapper">
+			<div class="contents">
+				<div class="contents-inner">
+					<!-- 縦書き -->
+					<div class="portrait">
+						<h2>この賑わい、<br />　あやかりたい。</h2>
+						<!-- <p>二〇一六.〇四.二五</p> -->
+					</div>
+					<!-- 横書き -->
+					<div class="landscape">
+						<h2>この賑わい、あやかりたい。</h2>
+						<!-- <p>2016.04.25</p> -->
+					</div>
+					<!--　英文
+                    <div class="sentence">
+                        <h2>I am not concerned that you have fallen.<br>I am concerned that you arise.</h2>
+                        <p>by Abraham Lincoln</p>
+                    </div> -->
+				</div>
+			</div><!-- /.contents -->
+		</div><!-- /.wrapper -->
+	</div><!-- /.middle -->
+</Layout>

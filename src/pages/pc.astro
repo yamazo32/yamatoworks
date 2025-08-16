@@ -1,0 +1,271 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+---
+
+<head>
+  <style slot="head" is:global>
+    @import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+  </style>
+</head>
+
+<Layout
+  title="パソコンサポート｜ヤマトワークス"
+  description="OS再セットアップからメモリ交換・HDD交換、データ復旧やデータ抹消に至るまで、トータルでパソコンを保守"
+  keywords="WEB制作,名刺,和風,デザイン,印刷,ヤマトワークス"
+>
+  <div class="sub-menu visible-md">
+    <div class="wrapper">
+      <ul>
+        <li><a href="#service">サービス内容</a></li>
+        <li><a href="#charge">料金について</a></li>
+      </ul>
+    </div>
+  </div><!-- /.sub-menu -->
+
+  <div class="stage odd" id="service">
+    <div class="wrapper pc-service">
+      <h2 class="title">サービス内容</h2>
+      <div class="columns clearfix">
+        <div class="column-left">
+          <h3 class="service-title">
+            <span class="circle-icon"><i class="fa fa-exchange alignright" aria-hidden="true"></i></span>
+            メモリ増設・交換
+          </h3>
+          <h4><span class="mark-yellow">パソコンの動きが悪い。</span></h4>
+          <p>パソコンを起動して使えるようになるまでに、時間がかかりすぎ「イライラ」することがありませんか？または、パソコンを使うのをやめスマホで済ませてませんか？</p>
+          <p>
+            Windows7以上であれば、まだまだ十分に使えます。動きが遅いと感じたら、まず、メモリ容量をチェックしてみること。<span class="mark-water">
+              メモリが2GB以下なら増設・交換を考えたほうが良いかもしれません。
+            </span>
+          </p>
+        </div>
+        <div class="column-right">
+          <h3 class="service-title">
+            <span class="circle-icon"><i class="fa fa-hdd-o alignright" aria-hidden="true"></i></span>
+            ハードディスク交換
+          </h3>
+          <h4><span class="mark-yellow">パソコンの動きが悪い Part2。</span></h4>
+          <p>
+            一昔前であれば、パソコンの高速化としてメモリ増設くらいしか方法はありませんでした。しかし、SSDやSSHDの登場で、「パソコンの動きが遅い」問題に終止符が打たれました。<br /><span
+              class="mark-pink"
+            >
+              現在のHDDからSSDやSSHDにデータをまるごとコピーし、ハードディスクを交換すれば、「イライラ」が解消されます。
+            </span>
+          </p>
+        </div>
+      </div><!-- /.columns -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+
+  <div class="stage even">
+    <div class="wrapper pc-service">
+      <div class="columns clearfix">
+        <div class="column-left">
+          <h3 class="service-title">
+            <span class="circle-icon"><i class="fa fa-usb alignright" aria-hidden="true"></i></span>
+            データのバックアップ
+          </h3>
+          <h4><span class="mark-yellow">パソコンのバックアップしてます？</span></h4>
+          <p>
+            今でも、作業中にパソコンがクラッシュし、数時間分の作業をムダにすることがありますが、パソコンが動かなくなったら数カ月いや数年分のデータを引き出すことができなくなる可能性があります。そのためには、最低でもユーザーデータを定期的にバックアップしておくことが必要です。
+          </p>
+          <p>ちなみに、<span class="mark-pink">HDDの寿命は使用頻度にもよりますが、「５年程度」それ以降はいつ故障しても不思議ではない</span>と言われております。</p>
+        </div>
+        <div class="column-right">
+          <h3 class="service-title">
+            <span class="circle-icon"><i class="fa fa-repeat alignright" aria-hidden="true"></i></span>
+            再セットアップ
+          </h3>
+          <h4><span class="mark-yellow">どうにもならない</span></h4>
+          <p>
+            起動を繰り返す、挙動がおかしい、ウイルスに感染したなど、パソコンがどうにもならない状況であれば、最後の手段は「リカバリ」です。たとえウイルスに感染しても、リカバリすればウイルスはなくなり安全にパソコンが使えます。
+          </p>
+        </div>
+      </div><!-- /.columns -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+
+  <div class="stage odd">
+    <div class="wrapper pc-service">
+      <div class="columns clearfix">
+        <div class="column-left">
+          <h3 class="service-title">
+            <span class="circle-icon"><i class="fa fa-file-text-o alignright" aria-hidden="true"></i></span>
+            データ復旧
+          </h3>
+          <h4><span class="mark-yellow">データが・・・</span></h4>
+          <p>
+            間違ってファイルを削除したり、いらないと思って削除したが、必要になったなど、データを取り戻した時があります。ハードディスクだけでなく、USBメモリやSDカードでもデータを復旧できる可能性はあります。
+          </p>
+          <ul class="notes">
+            <li>パソコンが起動できる状態であること。</li>
+          </ul>
+        </div>
+        <div class="column-right">
+          <h3 class="service-title">
+            <span class="circle-icon"><i class="fa fa-shield alignright" aria-hidden="true"></i></span>
+            ウイルス対策
+          </h3>
+          <h4><span class="mark-yellow">何よりもウイルス対策が先！</span></h4>
+          <p>
+            パソコンがウイスルに感染し困るのはあなただけでなく、パソコンにある他人の個人情報も悪用されてしまいます。まずは、パソコンにウイルスソフトが入っているのか確認し、なければ、導入するべきです！
+          </p>
+          <p>最近では、複数のパソコンを3年間も守ってくれるソフトもあります。</p>
+        </div>
+      </div><!-- /.columns -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+
+  <div class="stage even">
+    <div class="wrapper pc-service">
+      <div class="columns clearfix">
+        <div class="column-left">
+          <h3 class="service-title">
+            <span class="circle-icon"><i class="fa fa-trash-o alignright" aria-hidden="true"></i></span>
+            パソコン廃棄・データ抹消
+          </h3>
+          <h4><span class="mark-yellow">ハードディスクの内容はどうなるの？</span></h4>
+          <p>パソコンを他の人に譲ったり、パソコンをただ処分してませんか？もしかすると譲渡・処分する前に初期化すればデータが消えると思ってませんか？初期化ではデータが消えることはありません。</p>
+          <p>
+            ハードディスクにデータを上書きし、データを消去する方法が一般的です。<span class="mark-pink">
+              米国国家安全保障局（NSA）で推奨されている抹消方式が3回のデータ書き込みで、ソフトウェアによるデータの復旧が不可能になります。
+            </span>また、残留磁気を読み取る装置での復旧の可能性も低くなります。
+          </p>
+        </div>
+        <div class="column-right">
+          <h3 class="service-title">
+            <span class="circle-icon"><i class="fa fa-steam alignright" aria-hidden="true"></i></span>
+            パソコンのクリーニング
+          </h3>
+          <h4><span class="mark-yellow">綺麗にはりつたホコリは見事！</span></h4>
+          <p>
+            パソコン本体を開けると、美味しそうな綿菓子がビッシリと基盤やファンについておりますが、もちろん食べられません。ホコリですから！それが故障の原因にもなることはあります。時には掃除も必要ですが、静電気でパソコンに致命的なダメージを与えることもあるので、ご注意を！
+          </p>
+        </div>
+      </div><!-- /.columns -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+
+  <div class="stage odd" id="charge">
+    <div class="wrapper pc-charge">
+      <h2 class="title">料金について</h2>
+      <p class="contact-link">目安となる料金を提示しております。<br />詳しくは<a href="/contact/">お問合せフォーム</a>より<span>お問合せください。</span></p>
+      <div class="design-fee overflow-x">
+        <table class="table table-line">
+          <tr>
+            <th>項目</th>
+            <th>料金</th>
+          </tr>
+          <tr>
+            <td>
+              再セットアップ<br />＋ 初期添付アプリインストール<br />＋ Windows Update<br />＋ 不要ソフト削除
+              <ul class="notes">
+                <li>リカバリCD or HDリカバリ</li>
+              </ul>
+            </td>
+            <td>&yen;16,500</td>
+          </tr>
+          <tr>
+            <td>ウイルススキャン（駆除）<br />＋ Windows Update<br />＋ 不要ソフト削除<br />＋ ウイルス対策ソフトセットアップ<br />ウイルス対策ソフトは別途必要</td>
+            <td>&yen;16,500</td>
+          </tr>
+          <tr>
+            <td>
+              HDDをHDD（SSD/SSHD）にまるごとコピーし、交換する
+              <ul class="notes">
+                <li>新しいHDD（SSD/SSHD）は別途必要</li>
+                <li>ノートPCは分解費用として＋5000円</li>
+              </ul>
+            </td>
+            <td>&yen;11,000</td>
+          </tr>
+          <tr>
+            <td>データのバックアップ（ユーザーデータのみ）<br />＋ USBメモリ32GB付</td>
+            <td>&yen;5,500</td>
+          </tr>
+          <tr>
+            <td>
+              データのバックアップ（システム＆ユーザーデータ）
+              <ul class="notes">
+                <li>システムドライブと同容量以上のHDDが別途必要</li>
+              </ul>
+            </td>
+            <td>&yen;4,400</td>
+          </tr>
+          <tr>
+            <td>ウイルスソフトインストール＆セットアップ<br />＋ ESETファミリーセキュリティ5台3年版付</td>
+            <td>&yen;11,000</td>
+          </tr>
+          <tr>
+            <td>
+              無線ルーターの設置・設定
+              <ul class="notes">
+                <li>ルーター機器が別途必要要</li>
+              </ul>
+            </td>
+            <td>&yen;5,500</td>
+          </tr>
+          <tr>
+            <td>
+              インターネット接続設定<br />＋メール設定
+              <ul class="notes">
+                <li>プロバイダー契約が別途必</li>
+              </ul>
+            </td>
+            <td>&yen;5,500</td>
+          </tr>
+          <tr>
+            <td>ソフト・アプリインストール</td>
+            <td>&yen;3,300</td>
+          </tr>
+          <tr>
+            <td>
+              周辺機器設置・設定（プリンタ・スキャナなど）
+              <ul class="notes">
+                <li>機器が別途必要</li>
+              </ul>
+            </td>
+            <td>&yen;3,300</td>
+          </tr>
+          <tr>
+            <td>メモリ増設・交換</td>
+            <td>&yen;3,300</td>
+          </tr>
+          <tr>
+            <td>内蔵HDD増設・交換のみ</td>
+            <td>&yen;5,500</td>
+          </tr>
+          <tr>
+            <td>その他光学ドライブ増設・交換</td>
+            <td>&yen;5,500</td>
+          </tr>
+          <tr>
+            <td>マザーボード用リチウム電池交換（デスクトップ）</td>
+            <td>&yen;3,300</td>
+          </tr>
+          <tr>
+            <td>HDD内データの抹消（NSA仕様3回データ書き込み）</td>
+            <td>&yen;8,800</td>
+          </tr>
+          <tr>
+            <td>HDD内データの抹消（NATO仕様7回データ書き込み）</td>
+            <td>&yen;13,200</td>
+          </tr>
+          <tr>
+            <td>
+              パソコンクリーニング
+              <ul class="notes">
+                <li>PC内部のホコリ除去・外装</li>
+              </ul>
+            </td>
+            <td>&yen;4,400</td>
+          </tr>
+          <tr>
+            <td>データ復旧</td>
+            <td>相談</td>
+          </tr>
+        </table>
+      </div><!-- /.design-fee -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+</Layout>

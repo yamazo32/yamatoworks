@@ -1,0 +1,4 @@
+# このファイルはアップロードされない可能性があるので注意
+
+Options +ExecCGI
+AddHandler cgi-script .cgi

@@ -1,0 +1,59 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ScriptLoader from "../components/ScriptLoader.astro";
+
+const { title, description, keywords, robots = "index, follow", bodyClass = "", showFooter = true } = Astro.props;
+---
+
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="robots" content={robots} />
+		<title>{title}</title>
+		{description && <meta name="description" content={description} />}
+		{keywords && <meta name="keywords" content={keywords} />}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBV0TR0CPR"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-LBV0TR0CPR");
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href={`${import.meta.env.BASE_URL}favicon.ico`} type="image/vnd.microsoft.ico" />
+		<!-- <link rel="apple-touch-icon-precomposed" href="/favicon-152.png"> -->
+		<link rel="stylesheet" href={`${import.meta.env.BASE_URL}styles/style.css`} />
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href={`${import.meta.env.BASE_URL}styles/font-awesome.min.css`} />
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({
+				google_ad_client: "ca-pub-1440703139824086",
+				enable_page_level_ads: true,
+			});
+		</script>
+		<ScriptLoader />
+		<slot name="head" />
+	</head>
+	<body class:list={[bodyClass]}>
+		<Header />
+		<slot />
+		{showFooter && <Footer />}
+		<div class="bottom">
+			<div class="wrapper">
+				<div class="copyright">
+					copyright &copy; <span id="year"></span> ヤマトワークス. <span class="hidden-xs">All right reserved.</span>
+					<script>
+						document.getElementById("year").textContent = new Date().getFullYear();
+					</script>
+				</div>
+				<div class="pagetop"><a href="#">pagetop</a></div>
+			</div><!-- /.wrapper -->
+		</div><!-- /.bottom -->
+	</body>
+</html>

@@ -1,0 +1,7 @@
+---
+// components/ScriptLoader.astro
+---
+
+<!-- <Fragment set:html={`<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>`} /> -->
+<Fragment set:html={`<script src="${import.meta.env.BASE_URL}js/main.js" defer></script>`} />
+<Fragment set:html={`<script type="module" src="${import.meta.env.BASE_URL}js/analytics.js"></script>`} />

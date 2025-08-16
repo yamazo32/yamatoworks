@@ -22,3 +22,37 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+# 依存パッケージ
+node_modules/
+
+# gh-pages用データ(中身はdist/)
+gh-pages/
+
+# ビルド成果物（ビルド先 dist）
+dist/
+
+# ログファイル
+*.log
+
+# エディタ・IDE関連設定
+.vscode/
+.idea/
+
+# Astroのキャッシュや一時ファイル
+.astro/
+
+# 環境変数ファイル（秘密情報）
+.env
+.env.local
+.env.*.local
+
+# TypeScriptビルド成果物（tsc使用時）
+*.tsbuildinfo
+
+# OS固有ファイル
+.DS_Store
+Thumbs.db
+
+# 一時ファイル
+*.swp
+memo*

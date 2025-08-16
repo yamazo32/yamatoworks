@@ -1,0 +1,320 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+---
+
+<Layout
+  title="封筒印刷・封筒デザイン｜ヤマトワークス"
+  description="オリジナル封筒印刷は表裏をまたいでデザインできるため、個性のあるオリジナル封筒を作成できます。既製品封筒印刷は文具屋さんなどで販売している封筒に印刷するタイプで、比較的安価に印刷封筒を作成できます。ベロ印刷やベタ塗り印刷にも対応"
+  keywords="封筒印刷,既製封筒,オリジナル,ふた印刷,ベロ印刷"
+>
+  <div class="sub-menu visible-md">
+    <div class="wrapper">
+      <ul>
+        <li><a href="#catch">封筒印刷</a></li>
+        <li><a href="#flow">制作の流れ</a></li>
+        <li><a href="#sample">封筒サンプル</a></li>
+        <li><a href="#charge">料金について</a></li>
+        <li><a href="#dealing">お取引について</a></li>
+      </ul>
+    </div>
+  </div><!-- /.sub-menu -->
+
+  <div class="stage odd catch" id="catch">
+    <div class="wrapper evlp-catch">
+      <h2 class="title">封筒印刷</h2>
+      <div class="columns clearfix">
+        <div class="column-right">
+          <img class="align-center" src={`${import.meta.env.BASE_URL}img/envelope_img-catch.png`} alt="封筒印刷" />
+        </div>
+        <div class="column-left">
+          <h3 class="sub-title">一般事務用封筒から<br />自由なデザインが可能な個性のある<br />オリジナル封筒を作成</h3>
+          <p>
+            封筒印刷は、茶封筒をはじめホワイト/カラークラフト/ハーフトーンなど文具屋さんで販売している一般的な封筒に印刷をするものです。印刷方法は仕上がりがキレイなオフセット印刷を採用。紙色は20種類。
+          </p>
+          <p>オリジナル封筒印刷は、模造紙に印刷を施してから折込むものです。特徴としては、自由なデザインが可能となり、既成封筒に印刷するタイプよりも、個性が強くインパクトのある封筒となるでしょう。</p>
+          <div>
+            さらに詳しく知りたい、あるいはご質問等ございましたら、お気軽に<a href={`${import.meta.env.BASE_URL}contact/`}>お問合せフォーム</a>よりお問い合わせください。
+          </div>
+        </div>
+      </div><!-- /.columns -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+
+  <div class="stage even flow" id="flow">
+    <div class="wrapper evlp-flow">
+      <h2 class="title">制作の流れ</h2>
+      <ul>
+        <li>
+          <h3>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            お見積り
+          </h3>
+          <p class="hidden-xs">お使いの名刺を郵送。新規デザインやサンプルをもとにお見積り。</p>
+        </li>
+        <li>
+          <h3>
+            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+            デザイン
+          </h3>
+          <p class="hidden-xs">現物そっくりにトレース、または、新規デザインを作成。</p>
+        </li>
+        <li>
+          <h3>
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            確認承認
+          </h3>
+          <p class="hidden-xs">デザインの最終確認をしていただきます。<br />※納得いくまで訂正可</p>
+        </li>
+        <li>
+          <h3>
+            <i class="fa fa-jpy" aria-hidden="true"></i>
+            お支払い
+          </h3>
+          <p class="hidden-xs">指定した口座にお振り込みいただきます。</p>
+        </li>
+        <li>
+          <h3>
+            <i class="fa fa-print" aria-hidden="true"></i>
+            印刷
+          </h3>
+          <p class="hidden-xs">入金が確認出来次第、印刷にはいります。</p>
+        </li>
+        <li>
+          <h3>
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            納品
+          </h3>
+          <p class="hidden-xs">宅配便にお届けいたします。納期は入金確認後、1～2週間。</p>
+        </li>
+      </ul>
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+
+  <div class="stage odd" id="sample">
+    <div class="wrapper evlp-sample">
+      <h2 class="title">封筒サンプル</h2>
+      <div class="original">
+        <h3 class="brackets-title">オリジナル封筒</h3>
+        <p>チェックやボーダー柄の紙にフルカラーで印刷。<br class="hidden-xs" />目立つこと間違いなし！</p>
+        <img class="align-center" src={`${import.meta.env.BASE_URL}img/envelope_img-origin.png`} alt="オリジナル封筒サンプル" />
+      </div><!-- /.envelope-sample -->
+      <hr />
+      <div class="craft">
+        <h3 class="brackets-title">既製封筒（カラークラフト）</h3>
+        <p>
+          クラフト紙を使用した封筒で、一般的な茶封筒の紙でビビット系の色となります。<br class="hidden-xs" />もちろん茶封筒やホワイトもございます。
+        </p>
+        <img class="align-center" src={`${import.meta.env.BASE_URL}img/envelope_img-craft.png`} alt="クラフト封筒サンプル" />
+      </div><!-- /.envelope-sample -->
+      <hr />
+      <div class="half">
+        <h3 class="brackets-title">既製封筒（ハーフトーン）</h3>
+        <p>ツルツルした紙を使用した淡い色の封筒で、印刷の仕上がりがとても綺麗です。</p>
+        <img class="align-center" src={`${import.meta.env.BASE_URL}img/envelope_img-half.png`} alt="ハーフトーン封筒サンプル" />
+      </div><!-- /.envelope-sample -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+
+  <div class="stage even charge" id="charge">
+    <div class="wrapper evlp-charge">
+      <h2 class="title">料金について</h2>
+      <p class="contact-link">
+        目安となる料金を提示しております。<br />詳しくは<a href={`${import.meta.env.BASE_URL}contact/`}>お問合せフォーム</a>より<span>お問合せください。</span>
+      </p>
+      <h3 class="brackets-title">デザイン料</h3>
+      <div class="design-fee overflow-x">
+        <table class="table table-line">
+          <tr>
+            <th>項目</th>
+            <th>料金</th>
+            <th>詳細</th>
+          </tr>
+          <tr>
+            <td>ロゴトレース</td>
+            <td>&yen;2,200～</td>
+            <td>難易度の高いものは料金が高くなります。</td>
+          </tr>
+          <tr>
+            <td>デザイン</td>
+            <td>&yen;2,200～</td>
+            <td>それほど凝ったものでなければ最低価格のままです。</td>
+          </tr>
+        </table>
+      </div><!-- /.design-fee -->
+      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+      <h3 class="brackets-title">印刷料金</h3>
+      <div class="print-fee overflow-x">
+        <table class="table table-line">
+          <tr>
+            <th>項目</th>
+            <th>サイズ</th>
+            <th>色・印刷方式</th>
+            <th>料金</th>
+            <th>備考</th>
+          </tr>
+          <tr>
+            <td rowspan="6">白封筒<br />上質紙120g</td>
+            <td rowspan="2">長3/120×235mm</td>
+            <td class="txt-center">単色/刷込</td>
+            <td class="txt-right">&yen;7,700～/100枚</td>
+            <td>※100枚追加ごとに&#64;&yen;880</td>
+          </tr>
+          <tr>
+            <td class="txt-center">ﾌﾙｶﾗｰ/ｵﾌｾｯﾄ</td>
+            <td class="txt-right">&yen;13,200～/100枚</td>
+            <td>※100枚追加ごとに&#64;&yen;1,080</td>
+          </tr>
+          <tr>
+            <td rowspan="2">洋長3/120×235mm</td>
+            <td class="txt-center">単色/刷込</td>
+            <td class="txt-right">&yen;7,700～/100枚</td>
+            <td>※100枚追加ごとに&#64;&yen;880</td>
+          </tr>
+          <tr>
+            <td class="txt-center">ﾌﾙｶﾗｰ/ｵﾌｾｯﾄ</td>
+            <td class="txt-right">&yen;13,200～/100枚</td>
+            <td>※100枚追加ごとに&#64;&yen;1,100</td>
+          </tr>
+          <tr>
+            <td rowspan="2">角2/240×332mm</td>
+            <td class="txt-center">単色/刷込</td>
+            <td class="txt-right">&yen;8,800～/100枚</td>
+            <td>※100枚追加ごとに&#64;&yen;880</td>
+          </tr>
+          <tr>
+            <td class="txt-center">ﾌﾙｶﾗｰ/ｵﾌｾｯﾄ</td>
+            <td class="txt-right">&yen;17,600～/100枚<br /></td>
+            <td>※100枚追加ごとに&#64;&yen;1,650</td>
+          </tr>
+          <tr>
+            <td rowspan="3">柄紙封筒<br />ﾁｪｯｸ紙・ﾎﾞｰﾀﾞｰ紙</td>
+            <td>長3/120×235mm</td>
+            <td class="txt-center">ﾌﾙｶﾗｰ/ｵﾌｾｯﾄ</td>
+            <td class="txt-right">&yen;15,400～/100枚</td>
+            <td>※100枚追加ごとに&#64;&yen;1,320</td>
+          </tr>
+          <tr>
+            <td>洋長3/120×235mm</td>
+            <td class="txt-center">ﾌﾙｶﾗｰ/ｵﾌｾｯﾄ</td>
+            <td class="txt-right">&yen;15,400～/100枚</td>
+            <td>※100枚追加ごとに&#64;&yen;1,320</td>
+          </tr>
+          <tr>
+            <td>角2/240×332mm</td>
+            <td class="txt-center">ﾌﾙｶﾗｰ/ｵﾌｾｯﾄ</td>
+            <td class="txt-right">&yen;19,800～/100枚</td>
+            <td>※100枚追加ごとに&#64;&yen;2,200</td>
+          </tr>
+          <tr>
+            <td rowspan="2">茶・カラー封筒<br />ｶﾗｰｸﾗﾌﾄ・ﾊｰﾌﾄｰﾝ</td>
+            <td>長3/120×235mm</td>
+            <td class="txt-center">単色/ｵﾌｾｯﾄ</td>
+            <td class="txt-right">&yen;11,000～/<span class="attention">500</span>枚</td>
+            <td>※&yen;17,280～/1,000枚</td>
+          </tr>
+          <tr>
+            <td>角2/240×332mm</td>
+            <td class="txt-center">単色/ｵﾌｾｯﾄ</td>
+            <td class="txt-right">&yen;19,800～/<span class="attention">500</span>枚</td>
+            <td>※&yen;29,160～/1,000枚</td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              <ul class="notes">
+                <li>
+                  窓付き・両面テープ・蓋印刷などオプションがございます。<a href={`${import.meta.env.BASE_URL}contact/`}>こちら</a>よりお気軽にご相談下さい。
+                </li>
+                <li>フルカラーの場合、折り目などの境目を一切気にすることなく、自由なデザインが可能です。</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <!-- <table class="table table-line">
+          <tr>
+            <th>項目</th>
+            <th>料金</th>
+            <th>詳細</th>
+          </tr>
+          <tr>
+            <td rowspan="3">長3<br />120×235mm</td>
+            <td>&yen;21,600～</td>
+            <td>上質紙 紙厚90k、単色</td>
+          </tr>
+          <tr>
+            <td>&yen;27,000～</td>
+            <td>上質紙 紙厚90k、フルカラー</td>
+          </tr>
+          <tr>
+            <td>&yen;32,400～</td>
+            <td>高級紙 紙厚90k、フルカラー</td>
+          </tr>
+          <tr>
+            <td rowspan="3">洋長3<br />120×235mm</td>
+            <td>&yen;23,760～</td>
+            <td>上質紙 紙厚90k、単色</td>
+          </tr>
+          <tr>
+            <td>&yen;29,160～</td>
+            <td>上質紙 紙厚90k、フルカラー</td>
+          </tr>
+          <tr>
+            <td>&yen;34,560～</td>
+            <td>高級紙 紙厚90k、フルカラー</td>
+          </tr>
+          <tr>
+            <td rowspan="3">長3<br />120×235mm</td>
+            <td>&yen;27,000～</td>
+            <td>上質紙 紙厚90k、単色</td>
+          </tr>
+          <tr>
+            <td>&yen;36,720～</td>
+            <td>上質紙 紙厚90k、フルカラー</td>
+          </tr>
+          <tr>
+            <td>&yen;39,960～</td>
+            <td>高級紙 紙厚90k、フルカラー</td>
+          </tr>
+        </table> -->
+      </div><!-- /.print-fee -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+
+  <div class="stage odd dealing" id="dealing">
+    <div class="wrapper evlp-dealing">
+      <h2 class="title">お取引について</h2>
+      <div class="columns clearfix">
+        <div class="column delivery">
+          <div class="icon-in-circle">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+          </div>
+          <h3>納品</h3>
+          <p>
+            宅配便にてお届けします。
+            <br />北海道・東北・関東 - &yen;990
+            <br />中部・関西・北陸 - &yen;990
+            <br />四国・中国・九州 - &yen;1,100
+            <br />その他- &yen;1,650
+          </p>
+        </div>
+        <hr class="hidden-md" />
+        <div class="column payment">
+          <div class="icon-in-circle">
+            <i class="fa fa-jpy" aria-hidden="true"></i>
+          </div>
+          <h3>お支払い</h3>
+          <p>基本的には、指定口座にお振り込みいただきます。<br />代金引換をご希望の方は、ご相談ください。</p>
+        </div>
+        <hr class="hidden-md" />
+        <div class="column cancel">
+          <div class="icon-in-circle">
+            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+          </div>
+          <h3>キャンセル・返品</h3>
+          <p>
+            キャンセルの場合、そこまでに発生した費用はご負担していただくことになります。<br />また、印刷物に問題がありましたら、7日以内にご連絡ください。
+          </p>
+        </div>
+      </div><!-- /.columns -->
+    </div><!-- /.wrapper -->
+  </div><!-- /.stage -->
+</Layout>
