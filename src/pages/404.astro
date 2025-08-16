@@ -1,5 +1,24 @@
 ---
 import Layout from "../layouts/ErrorLayout.astro";
+Astro.response.status = 404;
 ---
 
-<Layout title="404 Not Found" errorNumber="404" errorName="ページが見つかりません" errorMessage="お探しのページは存在しないか、移動した可能性があります。" robots="index," />
+<Layout title="404 Not Found" errorNumber="404" errorName="ページが見つかりません" errorMessage="お探しのページは存在しないか、移動した可能性があります。" robots="noindex," />
+
+<!-- <Layout
+  title="401 Unauthorized"
+  errorNumber="401"
+  errorName="Unauthorized"
+  errorMessage="このエラーは、ページ閲覧にはパスワード認証が必要だが、正しく認証されなかったことを意味します。"
+  robots="noindex,"
+/> -->
+
+<!-- <Layout title="403 Forbidden" errorNumber="403" errorName="Forbidden" errorMessage="このエラーは、ページ閲覧にアクセス許可がなかったことを意味します。" robots="noindex," /> -->
+
+<!-- <Layout
+  title="500 Internal Server Error"
+  errorNumber="500"
+  errorName="Internal Server Error"
+  errorMessage="このエラーは、CGIやPHPなど内部参照におけるエラーのため、ページが表示できないことを意味します。"
+  robots="noindex,"
+/> -->
