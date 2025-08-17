@@ -54,11 +54,7 @@ const { title, description, keywords, robots = "index, follow", bodyClass = "", 
 		</div><!-- /.top -->
 		<slot />
 
-		<footer>
-			<div class="wrapper">
-				{showFooter && <FooterMenu />}
-			</div>
-		</footer>
+		{showFooter && <FooterMenu />}
 
 		<div class="bottom">
 			<div class="wrapper">
