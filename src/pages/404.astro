@@ -1,11 +1,11 @@
 ---
-import Layout from "../layouts/ErrorLayout.astro";
+import ErrorLayout from "../layouts/ErrorLayout.astro";
 Astro.response.status = 404;
 ---
 
-<Layout title="404 Not Found" errorNumber="404" errorName="ページが見つかりません" errorMessage="お探しのページは存在しないか、移動した可能性があります。" robots="noindex," />
+<ErrorLayout title="404 Not Found" errorNumber="404" errorName="ページが見つかりません" errorMessage="お探しのページは存在しないか、移動した可能性があります。" robots="noindex," />
 
-<!-- <Layout
+<!-- <ErrorLayout
   title="401 Unauthorized"
   errorNumber="401"
   errorName="Unauthorized"
@@ -13,9 +13,9 @@ Astro.response.status = 404;
   robots="noindex,"
 /> -->
 
-<!-- <Layout title="403 Forbidden" errorNumber="403" errorName="Forbidden" errorMessage="このエラーは、ページ閲覧にアクセス許可がなかったことを意味します。" robots="noindex," /> -->
+<!-- <ErrorLayout title="403 Forbidden" errorNumber="403" errorName="Forbidden" errorMessage="このエラーは、ページ閲覧にアクセス許可がなかったことを意味します。" robots="noindex," /> -->
 
-<!-- <Layout
+<!-- <ErrorLayout
   title="500 Internal Server Error"
   errorNumber="500"
   errorName="Internal Server Error"

@@ -1,18 +1,15 @@
 ---
-import Layout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<head>
-  <style slot="head" is:global>
-    @import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
-  </style>
-</head>
-
-<Layout
+<BaseLayout
   title="パソコンサポート｜ヤマトワークス"
   description="OS再セットアップからメモリ交換・HDD交換、データ復旧やデータ抹消に至るまで、トータルでパソコンを保守"
   keywords="WEB制作,名刺,和風,デザイン,印刷,ヤマトワークス"
 >
+  <style slot="head" is:global>
+    @import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+  </style>
   <div class="sub-menu visible-md">
     <div class="wrapper">
       <ul>
@@ -268,4 +265,4 @@ import Layout from "../layouts/BaseLayout.astro";
       </div><!-- /.design-fee -->
     </div><!-- /.wrapper -->
   </div><!-- /.stage -->
-</Layout>
+</BaseLayout>

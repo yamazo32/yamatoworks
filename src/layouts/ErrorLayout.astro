@@ -1,7 +1,14 @@
 ---
 // src/layouts/ErrorLayout.astro
 
-const { title, errorNumber, errorName, errorMessage, robots = "index, follow" } = Astro.props;
+interface Props {
+  title: string;
+  errorNumber: number;
+  errorName: string;
+  errorMessage: string;
+  robots?: string;
+}
+const { title, errorNumber, errorName, errorMessage, robots = "index, follow" } = Astro.props as Props;
 ---
 
 <!doctype html>
