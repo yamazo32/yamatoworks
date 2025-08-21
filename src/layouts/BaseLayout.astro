@@ -25,31 +25,30 @@ const { title, description, keywords, robots = "index, follow", bodyClass = "", 
 		<title>{title}</title>
 		{description && <meta name="description" content={description} />}
 		{keywords && <meta name="keywords" content={keywords} />}
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBV0TR0CPR"></script>
+		<!-- Google Tag Manager -->
 		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-LBV0TR0CPR");
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-NDPVPZL");
 		</script>
+		<!-- End Google Tag Manager -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<link rel="stylesheet" href={`${import.meta.env.BASE_URL}styles/style.css`} />
 		<link rel="stylesheet" href={`${import.meta.env.BASE_URL}styles/font-awesome.min.css`} />
 		<slot name="head" />
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({
-				google_ad_client: "ca-pub-1440703139824086",
-				enable_page_level_ads: true,
-			});
-		</script>
 	</head>
 	<body class:list={[bodyClass]}>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPVPZL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<div class="top">
 			<header class="wrapper header clearfix">
 				<div class="site">
