@@ -1,1 +1,1 @@
-yamatoworks.net
+echo "yamatoworks.net" > public/CNAME
