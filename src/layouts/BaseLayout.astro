@@ -26,7 +26,7 @@ const { title, description, keywords, robots = "index, follow", bodyClass = "", 
 		{description && <meta name="description" content={description} />}
 		{keywords && <meta name="keywords" content={keywords} />}
 		<!-- Google Tag Manager -->
-		<script>
+		<script is:inline>
 			(function (w, d, s, l, i) {
 				w[l] = w[l] || [];
 				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -47,7 +47,9 @@ const { title, description, keywords, robots = "index, follow", bodyClass = "", 
 	</head>
 	<body class:list={[bodyClass]}>
 		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPVPZL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPVPZL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
 		<!-- End Google Tag Manager (noscript) -->
 		<div class="top">
 			<header class="wrapper header clearfix">
@@ -56,10 +58,12 @@ const { title, description, keywords, robots = "index, follow", bodyClass = "", 
 						<a href={`${import.meta.env.BASE_URL}`}>デザイン・WEB制作｜ヤマトワークス</a>
 					</h1>
 					<p class="hidden">和風名刺は日本伝統文様を施したもので、きもの/華道/茶道の日本伝統文化を支える方たちのアイテムとし最適。</p>
-				</div><!-- /.top -->
+				</div>
+				<!-- /.top -->
 				<HeaderMenu />
 			</header>
-		</div><!-- /.top -->
+		</div>
+		<!-- /.top -->
 
 		<main>
 			<slot />
@@ -70,13 +74,16 @@ const { title, description, keywords, robots = "index, follow", bodyClass = "", 
 		<div class="bottom">
 			<div class="wrapper">
 				<div class="copyright">
-					copyright &copy; <span id="year"></span> ヤマトワークス. <span class="hidden-xs">All right reserved.</span>
+					copyright &copy;<span id="year"></span>ヤマトワークス.<span class="hidden-xs">All right reserved.</span>
 					<span id="year">{new Date().getFullYear()}</span>
 				</div>
-				<div class="pagetop"><a href="#">pagetop</a></div>
-			</div><!-- /.wrapper -->
-		</div><!-- /.bottom -->
+				<div class="pagetop">
+					<a href="#">pagetop</a>
+				</div>
+			</div>
+			<!-- /.wrapper -->
+		</div>
+		<!-- /.bottom -->
 		<Fragment set:html={`<script src="${import.meta.env.BASE_URL}js/main.js" defer></script>`} />
-		<Fragment set:html={`<script type="module" src="${import.meta.env.BASE_URL}js/analytics.js"></script>`} />
 	</body>
 </html>
